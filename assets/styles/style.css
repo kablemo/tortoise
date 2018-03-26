@@ -1,0 +1,306 @@
+/* MAIN */
+
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-size: cover;
+  height: 31rem;
+}
+
+h1 {
+  color: black;
+  font-size: 2rem;
+  font-family: Helvetica;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+}
+
+h3 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+/* TOP NAVIGATION */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  box-sizing: border-box;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  background-color: cadetblue;
+  margin-top: 1rem;
+}
+
+nav a {
+  font-family: Helvetica;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logowhite {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.logoblack {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.container {
+  width: 960px;
+  position: relative;
+}
+
+.whitebox {
+  position: absolute;
+  right: -2rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  width: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  box-sizing: border-box;
+  margin-top: 10rem;
+}
+
+/* FEATURES */
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.xyz {
+  width: 960px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.feature {
+  text-align: center;
+  margin: 3rem;
+  height: 8rem;
+  width: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 3.5rem;
+}
+
+.featurename {
+  text-align: center;
+  position: absolute;
+  width: 200%;
+  bottom: 0;
+}
+
+/* INFO */
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.infobox {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.titlebox {
+  width: 10rem;
+  background-color: cadetblue;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin: 0.5em 1.25rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerinfo {
+  width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footerinfocontent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .navbar {
+    margin-top: 0;
+  }
+
+  nav {
+    visibility: hidden;
+  }
+
+  header {
+    height: 17rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.77rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .companyname {
+    visibility: hidden;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .xyz {
+    width: 100%;
+  }
+
+  .whitebox {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    right: 0rem;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+  }
+
+  .features {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+
+  .feature {
+    margin-bottom: 1.54rem;
+    height: 5rem;
+  }
+
+  .featurename {
+    font-size: 0.77rem;
+  }
+
+  .info {
+    width: auto;
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .infobox {
+    width: 100%;
+  }
+
+  .titlebox {
+    width: 100%;
+    text-align: center;
+    border: 2px solid red;
+  }
+
+  .infodescription {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .footerinfocontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
+  }
+
+  .footerinfocontent p {
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logoblack {
+    margin-right: 0;
+  }
+}
